@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 5 DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 25px auto;
+            background-color: #f0f0f0;;
+        }
+        h1 {
+            color: #333;
+        }
+
+        .stats-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border-left: 4px solid #4CAF50;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adventure Game - Phase 5</h1>
+
+    <div class=""stats-box">
+        <p>Welcome, brave adventurer!</p>
+        <p>Current Score: <strong id="score">0</strong></p>
+        <p>Health: <strong id="health">100</strong></p>
+    </div>
+
+    <button id="attack-btn">Attack Enemy</button>
+    <button id="heal-btn">Use Potion</button>
+    <button id=""reset-btn">Reset Game</button>
+
+    <div id="output"></div>
+
+    <!-- JavaScript Here -->
+     <script src="phase5-intro.js"></script>
+</body>
+</html>

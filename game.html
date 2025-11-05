@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        
+        #game-container {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        
+        .stat-display {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        #score {
+            color: #FFD700;
+        }
+        
+        #health {
+            color: #FF6B6B;
+        }
+        
+        #output {
+            min-height: 80px;
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border: 2px solid #4CAF50;
+            display: none; /* Hidden by default */
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        #attack-btn {
+            background-color: #f44336;
+        }
+        
+        #attack-btn:hover {
+            background-color: #da190b;
+        }
+        
+        #heal-btn {
+            background-color: #2196F3;
+        }
+        
+        #heal-btn:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>⚔️ Adventure Game ⚔️</h1>
+
+        <select id="character-class" style="padding: 8px; font-size: 16px; border-radius: 5px;">
+            <option value="Warrior">⚔️ Warrior</option>
+            <option value="Mage">🧙🏻 Mage</option>
+            <option value="Rogue">🗡️ Rogue</option>
+        </select>
+
+        <div style="text-align: center; margin: 20px 0;">
+            <label for=""player-name" style="font-size: 18px; margin-right: 10px;">
+            Adventurer Name:
+        </label>
+    <input
+        type="text"
+        id="player-name"
+        placeholder="Enter your name"
+        value="Robert"
+        style="padding: 8px; font-size: 16px; border-radius: 5px; border: 2px solid #4CAF50; background-color: #1a1a1a; color: #fff;">
+    </div>
+        
+        <div class="stat-display">
+            Score: <span id="score">0</span>
+        </div>
+        
+        <div class="stat-display">
+            Health: <span id="health">100</span>
+        </div>
+        
+        <div id="battle-log-container" style="background-color: #1a1a1a; padding: 15px; border-radius: 5px; margin: 20px 0; border: 2px solid #4CAF50; height: 200px; overflow-y: auto;">
+            <h3 style="margin-top: 0; color: #4CAF50;">📜 Battle Log</h3>
+                <div id="battle-log">
+                    <!-- Messages will be added here dynamically -->
+                </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <button id="attack-btn">⚔️ Attack Enemy</button>
+            <button id="heal-btn">🧪 Drink Potion</button>
+            <button id="reset-btn">🔄 Reset Game</button>
+        </div>
+    </div>
+
+    <script src="exercise14.js"></script>
+</body>
+</html>
